@@ -6,49 +6,49 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-// Mapping of skills to their sources (job/education)
+// Mapping of skills to their sources (job/education) - from resume
 const skillSources: Record<string, string[]> = {
   // Languages
-  "C": ["Elbit Systems - Image Processing Engineer", "UC Davis - Computer Science"],
-  "C++": ["Elbit Systems - Image Processing Engineer", "UC Davis - Computer Science"],
-  "Python": ["Dell Technologies - Linux Systems Engineer", "Elbit Systems", "UC Davis"],
-  "Java": ["UC Davis - Computer Science"],
-  "JavaScript": ["UC Davis - Web Development"],
-  "Go": ["Dell Technologies - Linux Systems Engineer"],
-  "Matlab": ["Elbit Systems - Image Processing"],
+  "C": ["iTrace Technologies - Systems-level libraries", "UC Davis - Computer Science"],
+  "C++": ["iTrace Technologies - Systems-level libraries, refactoring legacy code", "Integer Systems - Systems-level engineering"],
+  "Python": ["UC Davis - Computer Science coursework"],
+  "Java": ["UC Davis - Object Oriented Programming"],
+  "JavaScript": ["UC Davis - Computer Science"],
+  "Go": ["UC Davis - Parallel Programming", "Integer Systems - Backend infrastructure"],
+  "Matlab": ["UC Davis - Computer Science"],
   
   // Systems & Tools
-  "Linux": ["Dell Technologies - Linux Systems Engineer", "Elbit Systems"],
-  "Git": ["Dell Technologies", "Elbit Systems", "UC Davis"],
-  "Bash": ["Dell Technologies - Linux Systems Engineer"],
-  "make/ninja": ["Elbit Systems - Image Processing Engineer"],
-  "Valgrind": ["Elbit Systems - Memory debugging"],
-  "GDB": ["Elbit Systems - Systems debugging"],
-  "GitLab CI/CD": ["Elbit Systems - DevOps pipelines"],
-  "Docker": ["Dell Technologies - Container environments"],
+  "Linux": ["iTrace Technologies - Linux-native execution, backend services", "Integer Systems - Infrastructure consulting"],
+  "Git": ["iTrace Technologies", "Integer Systems", "UC Davis"],
+  "Bash": ["iTrace Technologies - Shell scripts for deployment"],
+  "make/ninja": ["iTrace Technologies - Automated deployment pipelines"],
+  "Valgrind": ["iTrace Technologies - Memory leak detection"],
+  "GDB": ["iTrace Technologies - Debugging"],
+  "GitLab CI/CD": ["Integer Systems - CI/CD workflows across client stacks"],
+  "Docker": ["iTrace Technologies - Automated deployment pipelines"],
   
   // Parallel & HPC
-  "Parallel Programming": ["UC Davis - Computer Science"],
-  "OpenMP": ["UC Davis - High Performance Computing"],
-  "CUDA": ["UC Davis - GPU Programming"],
+  "Parallel Programming": ["UC Davis - Parallel Programming course"],
+  "OpenMP": ["UC Davis - Parallel Programming course"],
+  "CUDA": ["UC Davis - Parallel Programming course"],
   
   // Image & Compute
-  "OpenCV": ["Elbit Systems - Image Processing Engineer"],
-  "Image Processing": ["Elbit Systems - Real-time video systems"],
-  "Neural Networks": ["Elbit Systems - AI/ML integration"],
+  "OpenCV": ["iTrace Technologies - Neural network for visual copy detection"],
+  "Image Processing": ["iTrace Technologies - Image processing algorithm optimization"],
+  "Neural Networks": ["iTrace Technologies - OpenCV-based neural network", "UC Davis - Computer Vision & AI"],
   
   // Backend & Frameworks
-  "PHP": ["Previous web development experience"],
-  ".NET": ["Previous software development"],
-  "C#": ["Previous software development"],
-  "MySQL": ["UC Davis - Database coursework"],
-  "PostgreSQL": ["Dell Technologies - Data systems"],
+  "PHP": ["iTrace Technologies - Linux backend services, AWS data access", "Integer Systems - Backend infrastructure"],
+  ".NET": ["iTrace Technologies - C# APIs and UIs"],
+  "C#": ["iTrace Technologies - C# APIs, Windows desktop UI, license manager"],
+  "MySQL": ["iTrace Technologies - Database integration"],
+  "PostgreSQL": ["iTrace Technologies - Relational data systems"],
   
   // Cloud & Security
-  "AWS EC2": ["Dell Technologies - Cloud infrastructure"],
-  "Linux Debugging": ["Dell Technologies - System diagnostics"],
-  "System Provisioning": ["Dell Technologies - Infrastructure setup"],
-  "Networking": ["Dell Technologies - Network configuration"],
+  "AWS EC2": ["iTrace Technologies - AWS-hosted relational data"],
+  "Linux Debugging": ["iTrace Technologies - System debugging and optimization"],
+  "System Provisioning": ["Integer Systems - Architecture and deployment processes"],
+  "Networking": ["Tel Aviv University - Cyber & Networking Technologies course"],
 };
 
 const skillCategories = [
