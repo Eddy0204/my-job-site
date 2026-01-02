@@ -19,6 +19,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="#experience" element={<"./components/EducationSection" />} />
           </Routes>
         </HashRouter>
       </TooltipProvider>
