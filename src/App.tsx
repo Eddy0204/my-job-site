@@ -6,6 +6,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Education from "./components/EducationSection";
 
 const queryClient = new QueryClient();
 
@@ -19,7 +20,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="#experience" element={<"./components/EducationSection" />} />
+            <Route path="/#experience" element={<Education />} />
           </Routes>
         </HashRouter>
       </TooltipProvider>
